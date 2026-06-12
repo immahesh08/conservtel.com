@@ -1,0 +1,117 @@
+/* Employ.css */
+.employ-container {
+padding: 40px 0;
+}
+
+
+.employ-card {
+display: flex;
+gap: 30px;
+align-items: center;
+background: var(--card-bg);
+padding: 28px;
+border-radius: 20px;
+box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+
+.employ-left {
+flex: 1;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+.employ-icon-container {
+background: linear-gradient(135deg, #2563eb, #1d4ed8);
+border-radius: 20px;
+padding: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0 8px 30px rgba(37, 99, 235, 0.3);
+}
+
+
+.employ-icon {
+font-size: 6rem;
+color: #fff;
+}
+
+
+.employ-right {
+flex: 1;
+}
+
+
+.employ-right h2 {
+font-size: 1.8rem;
+margin-bottom: 12px;
+}
+
+
+.employ-right p {
+font-size: 1rem;
+line-height: 1.6;
+color: #4b5563;
+margin-bottom: 16px;
+}
+
+
+.employ-right ul {
+list-style: none;
+padding: 0;
+}
+
+
+.employ-right ul li {
+font-size: 0.95rem;
+margin-bottom: 8px;
+position: relative;
+padding-left: 18px;
+color: #374151;
+}
+
+
+.employ-right ul li::before {
+content: "✔";
+position: absolute;
+left: 0;
+top: 2px;
+color: #2563eb;
+font-size: 0.95rem;
+}
+
+
+/* DARK MODE */
+.app.dark .employ-card {
+background: #111827;
+box-shadow: none;
+}
+
+
+.app.dark .employ-right p,
+.app.dark .employ-right ul li {
+color: #d1d5db;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+.employ-card {
+flex-direction: column;
+text-align: center;
+}
+
+
+.employ-right ul li {
+padding-left: 0;
+}
+
+
+.employ-right ul li::before {
+display: none;
+}
+
+}
