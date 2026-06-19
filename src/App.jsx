@@ -30,6 +30,7 @@ const App = () => {
   };
 
   return (
+    <BrowserRouter>
     <div className={`app ${theme}`}>
       <Router>
         <Navbar onToggleTheme={handleToggleTheme} theme={theme} />
@@ -43,6 +44,7 @@ const App = () => {
         <Footer />
       </Router>
     </div>
+    </BrowserRouter>
   );
 };
 
