@@ -30,21 +30,21 @@ const App = () => {
   };
 
   return (
-    <HashRouter>
-    <div className={`app ${theme}`}>
-      <Router>
-        <Navbar onToggleTheme={handleToggleTheme} theme={theme} />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<OurServices />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/employ" element={<Employ />} />
-        </Routes>
-        <Footer />
-      </Router>
-    </div>
-    </HashRouter>
+  <HashRouter>
+  <div className={`app ${theme}`}>
+    <Navbar onToggleTheme={handleToggleTheme} theme={theme} />
+
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/services" element={<OurServices />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/employ" element={<Employ />} />
+    </Routes>
+
+    <Footer />
+  </div>
+</HashRouter>
   );
 };
 
