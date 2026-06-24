@@ -1,6 +1,6 @@
 // src/App.jsx
 import React, { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -30,7 +30,7 @@ const App = () => {
   };
 
   return (
-    <BrowserRouter>
+    <HashRouter>
     <div className={`app ${theme}`}>
       <Router>
         <Navbar onToggleTheme={handleToggleTheme} theme={theme} />
@@ -44,7 +44,7 @@ const App = () => {
         <Footer />
       </Router>
     </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
